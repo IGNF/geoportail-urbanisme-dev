@@ -61,20 +61,20 @@ Remarque :
 
 ## Données sources (zip) et pièces écrites (pdf)
 
-Les données sources et les pièces écrites sont poussées sur un service de téléchargement du géoportail. Le GpU offre des services qui permettent de récupérer facilement ces éléments :
-
-```
-TODO lien vers description dans la suite du document
-```
+Les données sources et les pièces écrites sont poussées sur un service de téléchargement du géoportail. Le GpU offre des services qui permettent de récupérer facilement ces éléments et qui sont décrits ci-après.
 
 
 ## Services du GpU
 
-### Lister les documents en production
+### Récupération d'information sur un document
 
-Un flux ATOM paginé permet de récupérer la liste de tous les documents en production sur le GpU :
+```
+https://www.geoportail-urbanisme.gouv.fr/document/info/?partition=<partition>
+```
 
-[https://www.geoportail-urbanisme.gouv.fr/atom/dataset-feed/](https://www.geoportail-urbanisme.gouv.fr/atom/dataset-feed/)
+Exemple :
+
+* [https://www.geoportail-urbanisme.gouv.fr/document/info/?partition=DU_27230](https://www.geoportail-urbanisme.gouv.fr/document/info/?partition=DU_27230)
 
 ### Téléchargement d'un document
 
@@ -90,10 +90,19 @@ Exemple :
 
 * [https://www.geoportail-urbanisme.gouv.fr/document/download-by-partition/130008915_SUP_43_PM1](https://www.geoportail-urbanisme.gouv.fr/document/download-by-partition/130008915_SUP_43_PM1)
 
-Remarque : 
+Remarque :
 
 * Ces données correspondent aux données sources et non aux données normalisées par le validateur CNIG.
 * En cas de non présence d'un document, le GpU renvoie une erreur 404 (la redirection vers le téléchargement d'un PLUi n'est pas assurée en v2)
+
+
+### Lister les documents en production
+
+Un flux ATOM paginé permet de récupérer la liste de tous les documents en production sur le GpU :
+
+[https://www.geoportail-urbanisme.gouv.fr/atom/dataset-feed/](https://www.geoportail-urbanisme.gouv.fr/atom/dataset-feed/)
+
+
 
 ## Flux WMS
 
@@ -101,7 +110,7 @@ Remarque :
 
 [https://wxs-gpu.mongeoportail.ign.fr/externe/i9ytmrb6tgtq5yfek781ntqi/wms/v?service=WMS&request=GetCapabilities](https://wxs-gpu.mongeoportail.ign.fr/externe/i9ytmrb6tgtq5yfek781ntqi/wms/v?service=WMS&request=GetCapabilities)
 
-Remarque : 
+Remarque :
 
 * La couche lowscale sera supprimée dans une prochaine version (2.1) en cours de finalisation
 * La couche "municipality" représente actuellement les communes, leurs appartenance ou non au RNU et la couverture des document d'urbanisme. Elle va être scindé en une table "municipality" et une table "document" représentant le tableau d'assemblage des documents d'urbanisme.
@@ -118,11 +127,3 @@ TODO : liens vers exemples WMS Leaflet et openlayers
 ### Exemple de requête GetFeatureInfo
 
 TODO
-
-
-
-
-
-
-
-
