@@ -7,6 +7,15 @@
 * SUP : Servitude d'Utilité Publique
 * Maillage : Représente un territoire (commune, EPCI, département, région, pays) identifié par son code INSEE (préfixé par 'R' pour les régions)
 
+## Mise en garde
+
+La v1 du GpU a permis de poser les bases pour une intégration document par document au sein du GpU.
+
+La v2 a viser l'automatisation de l'intégration des documents d'urbanisme (moissonnage flux ATOM & WFS).
+
+L'utilisation avancée du GpU par des services tiers (mise en place d'API, service WFS, etc.) fait l'objet d'une v3 en cours de spécification. Cette documentation est en avance de phase par rapport à ces travaux et des changements cassants au niveau des services pourront avoir lieux lors du passage en v3.
+
+
 ## Les données sources du GpU
 
 Les données sources sont des archives ZIP correspondant aux [standards CNIG](http://cnig.gouv.fr/?page_id=2732) pour les documents d'urbanisme et les SUP.
