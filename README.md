@@ -100,7 +100,7 @@ Remarque :
 
 Un flux ATOM paginé permet de récupérer la liste de tous les documents en production sur le GpU :
 
-[https://www.geoportail-urbanisme.gouv.fr/atom/dataset-feed/](https://www.geoportail-urbanisme.gouv.fr/atom/dataset-feed/)
+[https://www.geoportail-urbanisme.gouv.fr/atom/download-feed/](https://www.geoportail-urbanisme.gouv.fr/atom/download-feed/)
 
 
 
