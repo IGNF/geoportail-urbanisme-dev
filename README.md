@@ -127,4 +127,4 @@ https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?LAYE
 
 ### GetFeatureInfo (format : GeoJSON FeatureCollection)
 
-https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?REQUEST=GetFeatureInfo&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&INFO_FORMAT=application%2Fjson&SRS=EPSG%3A3857&FEATURE_COUNT=200&WIDTH=760&HEIGHT=604&X=450&Y=282&LAYERS=lowscale%2Czone_secteur%2Cprescription%2Cinfo&QUERY_LAYERS=lowscale%2Czone_secteur%2Cprescription%2Cinfo&BBOX=-214908.101573%2C6145916.111853%2C-200385.066199%2C6157458.103124
+https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?REQUEST=GetFeatureInfo&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&INFO_FORMAT=application%2Fjson&SRS=EPSG%3A3857&FEATURE_COUNT=200&WIDTH=760&HEIGHT=604&X=450&Y=282&LAYERS=zone_secteur%2Cprescription%2Cinfo&QUERY_LAYERS=zone_secteur%2Cprescription%2Cinfo&BBOX=-214908.101573%2C6145916.111853%2C-200385.066199%2C6157458.103124
