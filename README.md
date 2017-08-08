@@ -110,7 +110,7 @@ Le GpU offre des flux WMS utilisés pour le rendu cartographique.
 
 ### GetCapabilities
 
-[https://wxs-gpu.mongeoportail.ign.fr/externe/i9ytmrb6tgtq5yfek781ntqi/wms/v?service=WMS&request=GetCapabilities](https://wxs-gpu.mongeoportail.ign.fr/externe/i9ytmrb6tgtq5yfek781ntqi/wms/v?service=WMS&request=GetCapabilities)
+[https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?service=WMS&request=GetCapabilities](https://wxs-gpu.mongeoportail.ign.fr/externe/i9ytmrb6tgtq5yfek781ntqi/wms/v?service=WMS&request=GetCapabilities)
 
 Remarque :
 
@@ -120,11 +120,11 @@ Remarque :
 
 ### GetMap
 
-https://wxs-gpu.mongeoportail.ign.fr/externe/i9ytmrb6tgtq5yfek781ntqi/wms/v?LAYERS=zone_secteur&FORMAT=image%2Fpng&TRANSPARENT=true&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS=EPSG%3A3857&BBOX=205462.73203055933,6020516.112627208,215246.67165106162,6030300.0522477105&WIDTH=256&HEIGHT=256
+https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?LAYERS=zone_secteur&FORMAT=image%2Fpng&TRANSPARENT=true&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS=EPSG%3A3857&BBOX=205462.73203055933,6020516.112627208,215246.67165106162,6030300.0522477105&WIDTH=256&HEIGHT=256
 
 ![GetMap](https://wxs-gpu.mongeoportail.ign.fr/externe/i9ytmrb6tgtq5yfek781ntqi/wms/v?LAYERS=zone_secteur&FORMAT=image%2Fpng&TRANSPARENT=true&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS=EPSG%3A3857&BBOX=205462.73203055933,6020516.112627208,215246.67165106162,6030300.0522477105&WIDTH=256&HEIGHT=256)
 
 
 ### GetFeatureInfo (format : GeoJSON FeatureCollection)
 
-https://wxs-gpu.mongeoportail.ign.fr/externe/i9ytmrb6tgtq5yfek781ntqi/wms/v?REQUEST=GetFeatureInfo&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&INFO_FORMAT=application%2Fjson&SRS=EPSG%3A3857&FEATURE_COUNT=200&WIDTH=760&HEIGHT=604&X=450&Y=282&LAYERS=lowscale%2Czone_secteur%2Cprescription%2Cinfo&QUERY_LAYERS=lowscale%2Czone_secteur%2Cprescription%2Cinfo&BBOX=-214908.101573%2C6145916.111853%2C-200385.066199%2C6157458.103124
+https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?REQUEST=GetFeatureInfo&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&INFO_FORMAT=application%2Fjson&SRS=EPSG%3A3857&FEATURE_COUNT=200&WIDTH=760&HEIGHT=604&X=450&Y=282&LAYERS=lowscale%2Czone_secteur%2Cprescription%2Cinfo&QUERY_LAYERS=lowscale%2Czone_secteur%2Cprescription%2Cinfo&BBOX=-214908.101573%2C6145916.111853%2C-200385.066199%2C6157458.103124
