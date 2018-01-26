@@ -139,9 +139,6 @@ Le GpU offre des flux WFS utilisés pour l'interogation des couches
 
 [https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wfs/v?service=WFS&request=GetCapabilities](https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wfs/v?service=WFS&request=GetCapabilities)
 
-## API
-
-https://www.geoportail-urbanisme.gouv.fr/api
 
 
 
