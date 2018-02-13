@@ -137,7 +137,7 @@ Le GpU offre des flux WFS utilisés pour l'interogation des couches
 
 ### GetCapabilities
 
-[https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wfs/v?service=WFS&request=GetCapabilities](https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wfs/v?service=WFS&request=GetCapabilities)
+[https://wxs-gpu.mongeoportail.ign.fr/externe/39wtxmgtn23okfbbs1al2lz3/wfs/v?service=WFS&request=GetCapabilities](https://wxs-gpu.mongeoportail.ign.fr/externe/39wtxmgtn23okfbbs1al2lz3/wfs/v?service=WFS&request=GetCapabilities)
 
 
 
