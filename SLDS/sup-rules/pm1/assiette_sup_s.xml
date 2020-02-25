@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF8"?>
+<sld:StyledLayerDescriptor xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sld="http://www.opengis.net/sld" xmlns="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" version="1.0.0">
+  <!--BEGIN-->
+        <sld:Rule>
+          <sld:Name>pm1</sld:Name>
+          <sld:Title>Sécurité publique - PM1</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>suptype</ogc:PropertyName>
+              <ogc:Literal>pm1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:PolygonSymbolizer>
+            <sld:Stroke>		  
+				<sld:CssParameter name="stroke">#ff8000</sld:CssParameter>
+				<sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+				<sld:CssParameter name="stroke-dasharray">5 3</sld:CssParameter>
+            </sld:Stroke>			
+          </sld:PolygonSymbolizer>		  
+        </sld:Rule>
+  <!--END-->
+</sld:StyledLayerDescriptor>

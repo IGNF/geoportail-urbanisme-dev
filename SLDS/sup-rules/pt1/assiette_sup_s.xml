@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF8"?>
+<sld:StyledLayerDescriptor xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sld="http://www.opengis.net/sld" xmlns="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" version="1.0.0">
+  <!--BEGIN-->
+  <sld:Rule>
+    <sld:Name>pt1-Zone de garde</sld:Name>
+    <sld:Title>Communications électronique - PT1 - Zone de garde</sld:Title>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>suptype</ogc:PropertyName>
+          <ogc:Literal>pt1</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>typeass</ogc:PropertyName>
+          <ogc:Literal>Zone de garde</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+	<sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+    <PolygonSymbolizer>
+      <Fill>
+        <GraphicFill>
+          <Graphic>
+            <Mark>
+              <WellKnownName>shape://slash</WellKnownName>
+              <Stroke>
+                <CssParameter name="stroke">#807DFF</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+              </Stroke>
+            </Mark>
+            <Size>8</Size>
+          </Graphic>
+        </GraphicFill>
+      </Fill>
+      <Stroke>
+        <CssParameter name="stroke">#807DFF</CssParameter>
+        <CssParameter name="stroke-width">1</CssParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </sld:Rule>
+  <sld:Rule>
+    <sld:Name>pt1-Zone de protection</sld:Name>
+    <sld:Title>Communications électronique - PT1 - Zone de protection</sld:Title>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>suptype</ogc:PropertyName>
+          <ogc:Literal>pt1</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>typeass</ogc:PropertyName>
+          <ogc:Literal>Zone de protection</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+	<sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+    <PolygonSymbolizer>
+      <Fill>
+        <GraphicFill>
+          <Graphic>
+            <Mark>
+              <WellKnownName>shape://backslash</WellKnownName>
+              <Stroke>
+                <CssParameter name="stroke">#807DFF</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+              </Stroke>
+            </Mark>
+            <Size>8</Size>
+          </Graphic>
+        </GraphicFill>
+      </Fill>
+      <Stroke>
+        <CssParameter name="stroke">#807DFF</CssParameter>
+        <CssParameter name="stroke-width">1</CssParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </sld:Rule>
+  <!--END-->
+</sld:StyledLayerDescriptor>

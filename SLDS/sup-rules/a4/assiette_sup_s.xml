@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF8"?>
+<sld:StyledLayerDescriptor xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sld="http://www.opengis.net/sld" xmlns="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" version="1.0.0">
+  <!--BEGIN-->
+  <sld:Rule>
+    <sld:Name>a4</sld:Name>
+    <sld:Title>Eau - A4</sld:Title>
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>suptype</ogc:PropertyName>
+        <ogc:Literal>a4</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+	<sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+    <sld:PolygonSymbolizer>
+		<sld:Stroke>
+			<sld:CssParameter name="stroke">#00FF00</sld:CssParameter>
+			<sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+			<sld:CssParameter name="stroke-dasharray">10 5</sld:CssParameter>
+		</sld:Stroke>
+	</sld:PolygonSymbolizer>
+  </sld:Rule>
+  <!--END-->
+</sld:StyledLayerDescriptor>
