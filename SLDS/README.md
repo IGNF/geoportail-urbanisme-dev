@@ -19,4 +19,4 @@ Ces styles ont été établis à partir des recommandations de symbolisation ann
 
 Par ailleurs, ces styles sont fournis uniquement à titre d'information. **Il n'y a pas d'assistance dédiée à leur utilisation.**
 
-Pour tout retour sur le contenu de ces fichiers de style, merci de nous contacter via le [formulaire d'assistance de GPU](https://www.geoportail-urbanisme.gouv.fr/contact/pp/). Pour tout retour sur les recommandations de symbolisation annexés aux standards, merci de contacter directement le [GT CNIG DDU](http://cnig.gouv.fr/?page_id=2732). **Aucun retour ne sera traité au niveau de ce dépôt GitHub**.
+Pour tout retour sur le contenu de ces fichiers de style, merci de nous contacter via le [formulaire d'assistance de GPU](https://www.geoportail-urbanisme.gouv.fr/contact/pp/). Pour tout retour sur les recommandations de symbolisation annexées aux standards, merci de contacter directement le [GT CNIG DDU](http://cnig.gouv.fr/?page_id=2732). **Aucun retour ne sera traité au niveau de ce dépôt GitHub**.
