@@ -14,7 +14,7 @@ Les requêtes utilisées par le GPU sont les suivantes :
 
 > Méthode GET
 
-Parametres :
+Paramètres :
 * service : "WFS",
 * version : "2.0.0",
 * request : "GetCapabilities"
@@ -24,7 +24,7 @@ Parametres :
 
 > Méthode GET
 
-Parametres :
+Paramètres :
 * service => "WFS",
 * version => "2.0.0",
 * request => "DescribeFeatureType"
@@ -33,7 +33,7 @@ Parametres :
 
 > Méthode POST
 
-Parametres :
+Paramètres :
 * body : contenu en xml de la forme suivante
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -58,7 +58,7 @@ Parametres :
 * Url
     > l'url doit pointer vers le flux principal (download-feed)
 * Fréquence d'alimentation
-    > Détermine a quelle fréquence le flux va être mis à jour
+    > Détermine à quelle fréquence le flux va être mis à jour
     > valeurs possibles:
     >* Quotidien
     >* Hebdomadaire
@@ -94,7 +94,7 @@ Le flux est mis à jour si :
 
 ### Controles préalables
 
-Le GPU tente d'acceder à l'url du flux via la requete `GetCapabilities` et recherche la balise :
+Le GPU tente d'accéder à l'url du flux via la requête `GetCapabilities` et recherche la balise :
 
 ```xpath
 //wfs:WFS_Capabilities
@@ -104,16 +104,16 @@ Le GPU tente d'acceder à l'url du flux via la requete `GetCapabilities` et rech
 
 ### Update sequence
 
-Le GPU tente d'acceder à l'url du flux via la requete `GetCapabilities` et recherche la balise :
+Le GPU tente d'accéder à l'url du flux via la requête `GetCapabilities` et recherche la balise :
 
 ```xpath
 //wfs:WFS_Capabilities/@updateSequence
 ```
 
-> Erreur : `Impossible de récuperer l'update sequence du flux`
+> Erreur : `Impossible de récupérer l'update sequence du flux`
 
-La date est ensuite comparée avec la date du dernier moissonnage par le GPU pour savoir si un moissonnage doit etre lancé.
-Si le moissonnage à été demandé par l'utilisateur, le flux sera moissonné sans prendre en compte la difference de date.
+La date est ensuite comparée avec la date du dernier moissonnage par le GPU pour savoir si un moissonnage doit être lancé.
+Si le moissonnage a été demandé par l'utilisateur, le flux sera moissonné sans prendre en compte la difference de date.
 
 ---
 
@@ -123,20 +123,20 @@ Si le moissonnage à été demandé par l'utilisateur, le flux sera moissonné s
 
 #### Cas de Documents d'Urbanisme
 
-Opération `GetFeature` sur la table `DOC_URBA` pour recupérer les champs suivants :
+Opération `GetFeature` sur la table `DOC_URBA` pour récupérer les champs suivants :
 * IDURBA
 * URLMD
 * URLPE
 * TYPEDOC
 
-> Erreur : `Impossible d'acceder à la table DOC_URBA`
+> Erreur : `Impossible d'accéder à la table DOC_URBA`
 
 > Erreur : `Aucune balise /wfs:FeatureCollection/wfs:member/ trouvée`
 
 > Erreur : `Impossible de récupérer l'attribut`
 
 
-Recuperation de `MAILLAGE` et `DATAPPRO` à partir de `IDURBA`
+Récupération de `MAILLAGE` et `DATAPPRO` à partir de `IDURBA`
 
 Si la forme d'`IDURBA` respecte la regex :
 ```
@@ -144,12 +144,12 @@ Si la forme d'`IDURBA` respecte la regex :
 ```
 > Erreur : `IDURBA Non conforme`
 
-On extrait le maillage (5 premiers caracteres) et la date (8 caracteres suivants)
+On extrait le maillage (5 premiers caractères) et la date (8 caractères suivants)
 
 
 #### Cas des Servitudes d'utilité publique
 
-Opération `GetFeature` sur les table `SERVITUDE(_[MAILLAGE])?` pour recupérer les champs suivants :
+Opération `GetFeature` sur les tables `SERVITUDE(_[MAILLAGE])?` pour récupérer les champs suivants :
 
 * IDSUP
 * URLMD
@@ -161,7 +161,7 @@ Opération `GetFeature` sur les table `SERVITUDE(_[MAILLAGE])?` pour recupérer 
 
 ### Lecture de la métadonnée à partir de urlMD
 
-#### Lecture des specifications
+#### Lecture des spécifications
 
 Recherche d'une balise :
 ```xpath
@@ -179,11 +179,11 @@ Recherche d'une balise :
 /CNIG\s(CC|POS|PLU|PLUi|PSMV|SUP|SCOT)\sv\d{4}/i
 ```
 
-> Erreur `Impossible de detecter le champ specification dans les métadonnées, balise "//gmd:dataQualityInfo/*/gmd:report/*/gmd:result/*/gmd:specification/*/gmd:title/*" avec "//gmd:dataQualityInfo/*/gmd:report/*/gmd:result/*/gmd:specification/*/gmd:date/*/gmd:dateType/*/@codeListValue" = publication`
+> Erreur `Impossible de détecter le champ specification dans les métadonnées, balise "//gmd:dataQualityInfo/*/gmd:report/*/gmd:result/*/gmd:specification/*/gmd:title/*" avec "//gmd:dataQualityInfo/*/gmd:report/*/gmd:result/*/gmd:specification/*/gmd:date/*/gmd:dateType/*/@codeListValue" = publication`
 
-#### Recuperation du maillage ( cas des SUP 2016 )
+#### Récupération du maillage ( cas des SUP 2016 )
 
-Si specifications respectent `/CNIG\sSUP\sv2016/i`
+Si les spécifications respectent `/CNIG\sSUP\sv2016/i`
 Lecture du maillage dans les keywords de la forme `EMPRISE=[MAILLAGE]`
 
 #### Lecture de la date = datestamp
@@ -195,7 +195,7 @@ Recherche d'une balise :
 
 #### Lecture de l'Identifier
 
-Récuperation des informations dans l'identifier du Document (cas des documents respectants les CSMD récentes)
+Récupération des informations dans l'identifier du Document (cas des documents respectants les CSMD récentes)
 
 Recherche d'un balise :
 ```xpath
@@ -206,7 +206,7 @@ Recherche d'un balise :
 
 #### DU
 
-* recuperation du nom de document dans l'identifier avec la regex suivante :
+* récupération du nom de document dans l'identifier avec la regex suivante :
 
 ```
 (<INSEE>|<SIREN>)_(PLU|POS|CC|PLUi|PSMV)_<DATAPPRO>(_<CODE_DU>)?
@@ -214,36 +214,36 @@ Recherche d'un balise :
 
 > Erreur `Impossible de récupérer le nom du document à partir du champ "identifier" des métadonnées`
 
-Recuperation des informations dans le nom de document :
+Récupération des informations dans le nom de document :
 * type
 * date
 * maillage
 
-S'il n'a pas pu etre récupéré dans l'identifier des métadonnées, le nom du document est reconstitué à partir des informations de la table `DOC_URBA`
+S'il n'a pas pu être récupéré dans l'identifier des métadonnées, le nom du document est reconstitué à partir des informations de la table `DOC_URBA`
 
 > Erreur `Le nom du Document n'est pas valide`
 
 #### SUP
 
-Recuperation du nom de document dans l'identifier avec la regex SUP
+Récupération du nom de document dans l'identifier avec la regex SUP
 
 ```
 <IDGEST>_<CATEGORIE>_<MAILLAGE>_<DATAPPRO>
 ```
 
-Recuperation des informations dans le nom de document :
+Récupération des informations dans le nom de document :
 * idgest
 * date
 * categorie
 * maillage
 
-S'il n'a pas pu etre récupéré dans l'identifier des métadonnées, le nom du document est reconstitué à partir des informations de la table `SERVITUDE`
+S'il n'a pas pu être récupéré dans l'identifier des métadonnées, le nom du document est reconstitué à partir des informations de la table `SERVITUDE`
 
 > Erreur `Le nom du Document n'est pas valide`
 
 ### Récupération de la version la plus récente de chaque document
 
-Si le flux contient plusieurs documents pour le meme maillage, on garde seulement celui avec la datappro la plus recente
+Si le flux contient plusieurs documents pour le même maillage, on garde seulement celui avec la datappro la plus récente
 
 > Erreur : `Il existe une version plus récente du document sur le flux`
 
@@ -251,19 +251,19 @@ Si le flux contient plusieurs documents pour le meme maillage, on garde seulemen
 
 Les Objets de la table `SERVITUDE` sont regroupés par lot idgest/Categorie/Maillage
 
-La servitude groupée possede une liste d'IDSUP
+La servitude groupée possède une liste d'IDSUP
 
-### Controle si le document existe déjà sur le GPU
+### Contrôle si le document existe déjà sur le GPU
 
-Si le document existe deja, on regarde si le 'dateStamp' de la métadonnée est plus récent que la date du derniere moissonage
+Si le document existe déjà, on regarde si le 'dateStamp' de la métadonnée est plus récent que la date du dernier moissonage
 
 > Erreur : `Impossible de lire le dateStamp de la métadonnée pour savoir si le document est plus récent que celui présent sur le GPU`
 
-### Verification des droits de prévisualisation sur le Document
+### Vérification des droits de prévisualisation sur le Document
 
 > Erreur : `L'utilisateur n'a pas les droits de prévisualisation sur le Document`
 
-### Telechargement des Documents
+### Téléchargement des Documents
 
 #### Téléchargement des métadonnées
 
@@ -287,14 +287,14 @@ Téléchargement de métadonnées
 
 ##### Documents d'urbanisme
 
-Teléchargement des pièces écrites à partir de l'adresse urlPE
+Téléchargement des pièces écrites à partir de l'adresse urlPE
 > Erreur : `L'Url des Pièces écrites est absente`
 
 > Erreur : `Echec du téléchargement des pièces écrites`
 
 ##### Servitudes d'utilité publique
 
-Recupération des pieces ecrites en faisant la jointure entres les tables du modèle.
+Récupération des pièces écrites en faisant la jointure entres les tables du modèle.
 Les noms de tables sont préfixés par `[CATEGORIE]_` si SUP 2016 ou s'il s'agit des tables GENERATEUR_SUP ou ASSIETTE_SUP
 
 Opération `GetFeature` sur la table `SERVITUDE_ACTE_SUP` filtrée par la liste d'`IDSUP` pour récupérer une liste d'`IDACTE`
@@ -337,22 +337,22 @@ Téléchargement de la table si elle est dans la liste suivante:
 
 * Téléchargement de `SERVITUDE_ACTE_SUP` filtrée par la liste d'`IDSUP`
 
-* Lecture des features de `SERVITUDE_ACTE_SUP` filtrée par la liste d'`IDSUP`pour recupérer une liste d'`IDACTE`
+* Lecture des features de `SERVITUDE_ACTE_SUP` filtrées par la liste d'`IDSUP`pour récupérer une liste d'`IDACTE`
   Téléchargement de `ACTE_SUP` filtrée par la liste d'`IDACTE`
 
 * Téléchargement de `GESTIONNAIRE_SUP` filtrée par `IDGEST`
 
-* Téléchargement de `GENERATEUR_SUP_P/L/S` filtrés par la liste d'`IDSUP`
+* Téléchargement de `GENERATEUR_SUP_P/L/S` filtrées par la liste d'`IDSUP`
 
-* Lecture des features de `GENERATEUR_SUP_P/L/S` filtrés par la liste d'`IDSUP`pour recupérer une liste d'`IDGEN`
-  Téléchargement de `ASSIETTE_SUP_P/L/S` filtrés par la liste d'`IDGEN`
+* Lecture des features de `GENERATEUR_SUP_P/L/S` filtrées par la liste d'`IDSUP`pour récupérer une liste d'`IDGEN`
+  Téléchargement de `ASSIETTE_SUP_P/L/S` filtrées par la liste d'`IDGEN`
 
   > Erreur : `Echec de la lecture de la table`
 
   > Erreur : `Echec du Téléchargement`
 
-  > Erreur : `La Table [NOM TABLE] est vide apres filtrage`
+  > Erreur : `La Table [NOM TABLE] est vide après filtrage`
 
   ### Téléversement des documents sur le GPU
 
-* Les documents reconstirués sont alors téléversés en previsualisation sur le GPU
+* Les documents reconstitués sont alors téléversés en prévisualisation sur le GPU
