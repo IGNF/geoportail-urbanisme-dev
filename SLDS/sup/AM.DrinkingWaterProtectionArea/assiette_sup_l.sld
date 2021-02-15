@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>a5</sld:Name>
-          <sld:Title>Eaux et assainissement - A5</sld:Title>
+          <sld:Title>Canalisations publiques d'eau et assainissement - A5</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>

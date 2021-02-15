@@ -3,21 +3,26 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>ar3-Zone de prohibition 1</sld:Name>
-          <sld:Title>Défense nationale - AR3 - Zone de sécurité 1</sld:Title>
+          <sld:Title>Magasins à poudre - zones de prohibition - AR3</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>suptype</ogc:PropertyName>
                 <ogc:Literal>ar3</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>typeass</ogc:PropertyName>
-                <ogc:Literal>Zone de prohibition 1</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>typeass</ogc:PropertyName>
+                  <ogc:Literal>Zone de prohibition 1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>typeass</ogc:PropertyName>
+                  <ogc:Literal>Zone de prohibition 2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
             </ogc:And>
           </ogc:Filter>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
@@ -28,60 +33,23 @@
                   <sld:Mark>
                     <sld:WellKnownName>shape://slash</sld:WellKnownName>
                     <sld:Stroke>
-                      <sld:CssParameter name="stroke">#aa007f</sld:CssParameter>
-                      <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+                      <sld:CssParameter name="stroke">#800080</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
                     </sld:Stroke>
                   </sld:Mark>
-                  <sld:Size>8</sld:Size>
+                  <sld:Size>4</sld:Size>
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#aa007f</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
-            </sld:Stroke>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>ar3-Zone de prohibition 2</sld:Name>
-          <sld:Title>Défense nationale - AR3 - Zone de sécurité 2</sld:Title>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>suptype</ogc:PropertyName>
-                <ogc:Literal>ar3</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>typeass</ogc:PropertyName>
-                <ogc:Literal>Zone de prohibition 2</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:GraphicFill>
-                <sld:Graphic>
-                  <sld:Mark>
-                    <sld:WellKnownName>shape://slash</sld:WellKnownName>
-                    <sld:Stroke>
-                      <sld:CssParameter name="stroke">#aa007f</sld:CssParameter>
-                      <sld:CssParameter name="stroke-width">2</sld:CssParameter>
-                    </sld:Stroke>
-                  </sld:Mark>
-                  <sld:Size>8</sld:Size>
-                </sld:Graphic>
-              </sld:GraphicFill>
-            </sld:Fill>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#aa007f</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+              <sld:CssParameter name="stroke">#800080</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>ar3-Zone d'isolement</sld:Name>
-          <sld:Title>Défense nationale - AR3 - Zone d’isolement</sld:Title>
+          <sld:Title>Magasins à poudre - zones d'isolement - AR3</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -102,23 +70,23 @@
                   <sld:Mark>
                     <sld:WellKnownName>shape://slash</sld:WellKnownName>
                     <sld:Stroke>
-                      <sld:CssParameter name="stroke">#aa007f</sld:CssParameter>
-                      <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+                      <sld:CssParameter name="stroke">#800080</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
                     </sld:Stroke>
                   </sld:Mark>
-                  <sld:Size>10</sld:Size>
+                  <sld:Size>12</sld:Size>
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#aa007f</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+              <sld:CssParameter name="stroke">#800080</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>el5</sld:Name>
-          <sld:Title>Réseau routier - EL5</sld:Title>
+          <sld:Title>Visibilité sur les voies publiques - EL5</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -136,7 +104,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>el11</sld:Name>
-          <sld:Title>Réseau routier - EL11</sld:Title>
+          <sld:Title>Interdictions d'accès en bord de routes - EL11</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -200,7 +168,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>js1</sld:Name>
-          <sld:Title>Patrimoine sportif - JS1</sld:Title>
+          <sld:Title>Equipements sportifs - JS1</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -219,19 +187,19 @@
                     </sld:Fill>
                     <sld:Stroke>
                       <sld:CssParameter name="stroke">#000000</sld:CssParameter>
-                      <sld:CssParameter name="stroke-width">0.1</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
                     </sld:Stroke>
                   </sld:Mark>
-                  <sld:Size>8</sld:Size>
+                  <sld:Size>10</sld:Size>
                 </sld:Graphic>
               </sld:GraphicStroke>
-              <sld:CssParameter name="stroke-dasharray">5 5</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">7 4</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>pm1</sld:Name>
-          <sld:Title>Sécurité publique - PM1</sld:Title>
+          <sld:Title>Plans de prévention des risques naturels et miniers - PM1</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -240,16 +208,29 @@
           </ogc:Filter>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:GraphicFill>
+                <sld:Graphic>
+                  <sld:Mark>
+                    <sld:WellKnownName>shape://slash</sld:WellKnownName>
+                    <sld:Stroke>
+                      <sld:CssParameter name="stroke">#a81616</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+                    </sld:Stroke>
+                  </sld:Mark>
+                  <sld:Size>8</sld:Size>
+                </sld:Graphic>
+              </sld:GraphicFill>
+            </sld:Fill>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#ff8000</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">5 3</sld:CssParameter>
+              <sld:CssParameter name="stroke">#a81616</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>pm3</sld:Name>
-          <sld:Title>Sécurité publique - PM3</sld:Title>
+          <sld:Title>Plans de prévention des risques technologiques - PM3</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -262,27 +243,25 @@
               <sld:GraphicFill>
                 <sld:Graphic>
                   <sld:Mark>
-                    <sld:WellKnownName>shape://times</sld:WellKnownName>
+                    <sld:WellKnownName>shape://vertline</sld:WellKnownName>
                     <sld:Stroke>
-                      <sld:CssParameter name="stroke">#ff8000</sld:CssParameter>
+                      <sld:CssParameter name="stroke">#a81616</sld:CssParameter>
                       <sld:CssParameter name="stroke-width">1</sld:CssParameter>
                     </sld:Stroke>
                   </sld:Mark>
-                  <sld:Size>14</sld:Size>
+                  <sld:Size>6</sld:Size>
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
-          </sld:PolygonSymbolizer>
-          <sld:PolygonSymbolizer>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#ff8000</sld:CssParameter>
+              <sld:CssParameter name="stroke">#a81616</sld:CssParameter>
               <sld:CssParameter name="stroke-width">1</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>pm5</sld:Name>
-          <sld:Title>Sécurité publique - PM5</sld:Title>
+          <sld:Title>Ouvrages hydrauliques- PM5</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -295,22 +274,19 @@
               <sld:GraphicFill>
                 <sld:Graphic>
                   <sld:Mark>
-                    <sld:WellKnownName>ttf://Arial#0x3C</sld:WellKnownName>
-                    <sld:Fill>
-                      <sld:CssParameter name="fill">#ff8000</sld:CssParameter>
-                    </sld:Fill>
+                    <sld:WellKnownName>shape://horline</sld:WellKnownName>
+                    <sld:Stroke>
+                      <sld:CssParameter name="stroke">#a81616</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+                    </sld:Stroke>
                   </sld:Mark>
-                  <sld:Size>12</sld:Size>
-                  <sld:Rotation>90</sld:Rotation>
+                  <sld:Size>6</sld:Size>
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
-            <sld:VendorOption name="graphic-margin">4 2</sld:VendorOption>
-          </sld:PolygonSymbolizer>
-          <sld:PolygonSymbolizer>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#ff8000</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+              <sld:CssParameter name="stroke">#a81616</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>

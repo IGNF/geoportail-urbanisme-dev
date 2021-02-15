@@ -3,8 +3,24 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:Name>t4</sld:Name>
+          <sld:Title>Aéronautique de balisage - T4</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>suptype</ogc:PropertyName>
+              <ogc:Literal>t4</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:PolygonSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
+        </sld:Rule>
         <sld:Rule>
           <sld:Name>t5</sld:Name>
           <sld:Title>Circulation aérienne - T5</sld:Title>
@@ -14,7 +30,7 @@
               <ogc:Literal>t5</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>25000</sld:MaxScaleDenominator>
+          <sld:MinScaleDenominator>17062</sld:MinScaleDenominator>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
           <PolygonSymbolizer>
             <Stroke>
@@ -25,7 +41,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>t6</sld:Name>
-          <sld:Title>Circulation aérienne - T6</sld:Title>
+          <sld:Title>Terrains nécessaires à la navigation aérienne - T6</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -55,6 +71,23 @@
               <CssParameter name="stroke-width">1</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Name>t7</sld:Name>
+          <sld:Title>Extérieur des zones de dégagament - T7</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>suptype</ogc:PropertyName>
+              <ogc:Literal>t7</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:PolygonSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
         </sld:Rule>
       </sld:FeatureTypeStyle>
     </sld:UserStyle>

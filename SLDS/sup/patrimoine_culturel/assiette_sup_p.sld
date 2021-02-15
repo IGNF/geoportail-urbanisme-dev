@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>ac2</sld:Name>
-          <sld:Title>Monuments naturels et sites - AC2</sld:Title>
+          <sld:Title>Sites inscrits et classés - AC2</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>

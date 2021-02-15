@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>el7</sld:Name>
-          <sld:Title>Réseau routier - EL7</sld:Title>
+          <sld:Title>Alignement des voies publiques - EL7</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -18,14 +17,14 @@
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
-              <CssParameter name="stroke-width">0.5</CssParameter>
-              <CssParameter name="stroke-dasharray">10 2</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-dasharray">10 8</CssParameter>
             </Stroke>
           </LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>t2</sld:Name>
-          <sld:Title>Remontées mécaniques et pistes de ski - T2</sld:Title>
+          <sld:Title>Survol au profit des téléphériques - T2</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>

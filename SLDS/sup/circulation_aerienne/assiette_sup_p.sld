@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>t4</sld:Name>
-          <sld:Title>Circulation aérienne - T4</sld:Title>
+          <sld:Title>Aéronautique de balisage - T4</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -15,7 +14,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <PointSymbolizer>
+          <sld:PointSymbolizer>
             <Graphic>
               <sld:Mark>
                 <sld:WellKnownName>ttf://Wingdings 2#0xE1</sld:WellKnownName>
@@ -25,11 +24,11 @@
               </sld:Mark>
               <sld:Size>8</sld:Size>
             </Graphic>
-          </PointSymbolizer>
+          </sld:PointSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>t7</sld:Name>
-          <sld:Title>Circulation aérienne - T7</sld:Title>
+          <sld:Title>Extérieur des zones de dégagament - T7</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -37,7 +36,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <PointSymbolizer>
+          <sld:PointSymbolizer>
             <Graphic>
               <sld:Mark>
                 <sld:WellKnownName>ttf://Wingdings 2#0xAE</sld:WellKnownName>
@@ -47,7 +46,7 @@
               </sld:Mark>
               <Size>10</Size>
             </Graphic>
-          </PointSymbolizer>
+          </sld:PointSymbolizer>
         </sld:Rule>
       </sld:FeatureTypeStyle>
     </sld:UserStyle>

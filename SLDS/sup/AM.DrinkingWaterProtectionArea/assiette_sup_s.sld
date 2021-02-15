@@ -3,48 +3,28 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
-          <sld:Name>as1-Périmètre de protection éloignée</sld:Name>
-          <sld:Title>Eau - AS1 - Zone de protection éloignée</sld:Title>
+          <sld:Name>a5</sld:Name>
+          <sld:Title>Canalisations publiques d'eau et assainissement - A5</sld:Title>
           <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>suptype</ogc:PropertyName>
-                <ogc:Literal>as1</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>typeass</ogc:PropertyName>
-                <ogc:Literal>Périmètre de protection éloignée</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>suptype</ogc:PropertyName>
+              <ogc:Literal>a5</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:GraphicFill>
-                <sld:Graphic>
-                  <sld:Mark>
-                    <sld:WellKnownName>shape://slash</sld:WellKnownName>
-                    <sld:Stroke>
-                      <sld:CssParameter name="stroke">#00aaff</sld:CssParameter>
-                      <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
-                    </sld:Stroke>
-                  </sld:Mark>
-                  <sld:Size>10</sld:Size>
-                </sld:Graphic>
-              </sld:GraphicFill>
-            </sld:Fill>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#00aaff</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+              <sld:CssParameter name="stroke">#00ff00</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">15 3</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>as1-Périmètre de protection immédiate</sld:Name>
-          <sld:Title>Eau - AS1 - Zone de protection immédiate</sld:Title>
+          <sld:Title>Protection des eaux - périmètre de protection immédiate - AS1</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -65,23 +45,23 @@
                   <sld:Mark>
                     <sld:WellKnownName>shape://slash</sld:WellKnownName>
                     <sld:Stroke>
-                      <sld:CssParameter name="stroke">#00aaff</sld:CssParameter>
-                      <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+                      <sld:CssParameter name="stroke">#00c0c0</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
                     </sld:Stroke>
                   </sld:Mark>
-                  <sld:Size>6</sld:Size>
+                  <sld:Size>4</sld:Size>
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#00aaff</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+              <sld:CssParameter name="stroke">#00c0c0</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>as1-Périmètre de protection rapprochée</sld:Name>
-          <sld:Title>Eau - AS1 - Zone de protection rapprochée</sld:Title>
+          <sld:Title>Protection des eaux - périmètre de protection rapprochée - AS1</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -102,7 +82,7 @@
                   <sld:Mark>
                     <sld:WellKnownName>shape://slash</sld:WellKnownName>
                     <sld:Stroke>
-                      <sld:CssParameter name="stroke">#00aaff</sld:CssParameter>
+                      <sld:CssParameter name="stroke">#00c0c0</sld:CssParameter>
                       <sld:CssParameter name="stroke-width">1</sld:CssParameter>
                     </sld:Stroke>
                   </sld:Mark>
@@ -111,14 +91,51 @@
               </sld:GraphicFill>
             </sld:Fill>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#00aaff</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+              <sld:CssParameter name="stroke">#00c0c0</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Name>as1-Périmètre de protection éloignée</sld:Name>
+          <sld:Title>Protection des eaux - périmètre de protection éloignée - AS1</sld:Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>suptype</ogc:PropertyName>
+                <ogc:Literal>as1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>typeass</ogc:PropertyName>
+                <ogc:Literal>Périmètre de protection éloignée</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:GraphicFill>
+                <sld:Graphic>
+                  <sld:Mark>
+                    <sld:WellKnownName>shape://slash</sld:WellKnownName>
+                    <sld:Stroke>
+                      <sld:CssParameter name="stroke">#00c0c0</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+                    </sld:Stroke>
+                  </sld:Mark>
+                  <sld:Size>12</sld:Size>
+                </sld:Graphic>
+              </sld:GraphicFill>
+            </sld:Fill>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#00c0c0</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>as1-Périmètre de protection eau minérale</sld:Name>
-          <sld:Title>Eau - AS1 - Zone de protection eau minérale</sld:Title>
+          <sld:Title>Protection des eaux - périmètre de protection eau minérale - AS1</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -137,19 +154,19 @@
               <sld:GraphicFill>
                 <sld:Graphic>
                   <sld:Mark>
-                    <sld:WellKnownName>ttf://Wingdings 2#0x9E</sld:WellKnownName>
-                    <sld:Fill>
-                      <sld:CssParameter name="fill">#00aaff</sld:CssParameter>
-                    </sld:Fill>
-                    <sld:VendorOption name="graphic-margin">4</sld:VendorOption>
+                    <sld:WellKnownName>shape://slash</sld:WellKnownName>
+                    <sld:Stroke>
+                      <sld:CssParameter name="stroke">#00c0c0</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">3</sld:CssParameter>
+                    </sld:Stroke>
                   </sld:Mark>
-                  <sld:Size>8</sld:Size>
+                  <sld:Size>10</sld:Size>
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#00aaff</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+              <sld:CssParameter name="stroke">#00c0c0</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>

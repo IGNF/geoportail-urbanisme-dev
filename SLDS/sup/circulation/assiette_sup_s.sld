@@ -3,7 +3,6 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>t5</sld:Name>
@@ -14,7 +13,7 @@
               <ogc:Literal>t5</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>25000</sld:MaxScaleDenominator>
+          <sld:MinScaleDenominator>25000</sld:MinScaleDenominator>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
           <PolygonSymbolizer>
             <Stroke>

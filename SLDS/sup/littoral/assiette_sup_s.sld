@@ -3,7 +3,6 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>el9</sld:Name>
@@ -17,7 +16,13 @@
           <sld:MaxScaleDenominator>272989</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#9b9b9b</sld:CssParameter>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#ffff00</sld:CssParameter>
               <sld:CssParameter name="stroke-width">1</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>

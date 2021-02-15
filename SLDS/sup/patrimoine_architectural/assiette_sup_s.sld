@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>ac4</sld:Name>
-          <sld:Title>Patrimoine architectural et urbain - AC4</sld:Title>
+          <sld:Title>Sites patrimoniaux remarquables - AC4</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -20,16 +19,51 @@
               <sld:GraphicFill>
                 <sld:Graphic>
                   <sld:Mark>
-                    <sld:WellKnownName>shape://plus</sld:WellKnownName>
+                    <sld:WellKnownName>shape://backslash</sld:WellKnownName>
                     <sld:Stroke>
-                      <sld:CssParameter name="stroke">#FF8000</sld:CssParameter>
-                      <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+                      <sld:CssParameter name="stroke">#ff8000</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
                     </sld:Stroke>
                   </sld:Mark>
-                  <sld:Size>10</sld:Size>
+                  <sld:Size>8</sld:Size>
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#ff8000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Name>ac4bis</sld:Name>
+          <sld:Title>Plans de Valorisation de l'Architecture et du Patrimoine - AC4bis</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>suptype</ogc:PropertyName>
+              <ogc:Literal>ac4bis</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:GraphicFill>
+                <sld:Graphic>
+                  <sld:Mark>
+                    <sld:WellKnownName>shape://backslash</sld:WellKnownName>
+                    <sld:Stroke>
+                      <sld:CssParameter name="stroke">#ff8000</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+                    </sld:Stroke>
+                  </sld:Mark>
+                  <sld:Size>8</sld:Size>
+                </sld:Graphic>
+              </sld:GraphicFill>
+            </sld:Fill>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#ff8000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+            </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
       </sld:FeatureTypeStyle>

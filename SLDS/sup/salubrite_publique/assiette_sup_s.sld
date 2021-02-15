@@ -3,7 +3,6 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>int1</sld:Name>
@@ -38,7 +37,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>as2</sld:Name>
-          <sld:Title>Établissement conchylicoles - AS2</sld:Title>
+          <sld:Title>Établissements conchylicoles - AS2</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -51,7 +50,7 @@
               <sld:GraphicFill>
                 <sld:Graphic>
                   <sld:Mark>
-                    <sld:WellKnownName>shape://slash</sld:WellKnownName>
+                    <sld:WellKnownName>shape://backslash</sld:WellKnownName>
                     <sld:Stroke>
                       <sld:CssParameter name="stroke">#00C0C0</sld:CssParameter>
                       <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
@@ -63,7 +62,7 @@
             </sld:Fill>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#00C0C0</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>

@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>pt1-Zone de garde</sld:Name>
-          <sld:Title>Communications électronique - PT1 - Zone de garde</sld:Title>
+          <sld:Title>Communications électroniques - Zone de garde - PT1 </sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -29,7 +28,7 @@
                     <WellKnownName>shape://slash</WellKnownName>
                     <Stroke>
                       <CssParameter name="stroke">#807DFF</CssParameter>
-                      <CssParameter name="stroke-width">1</CssParameter>
+                      <CssParameter name="stroke-width">2</CssParameter>
                     </Stroke>
                   </Mark>
                   <Size>8</Size>
@@ -38,13 +37,13 @@
             </Fill>
             <Stroke>
               <CssParameter name="stroke">#807DFF</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-width">2</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>pt1-Zone de protection</sld:Name>
-          <sld:Title>Communications électronique - PT1 - Zone de protection</sld:Title>
+          <sld:Title>Communications électroniques - Zone de protection - PT1 </sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -63,25 +62,25 @@
               <GraphicFill>
                 <Graphic>
                   <Mark>
-                    <WellKnownName>shape://backslash</WellKnownName>
+                    <WellKnownName>shape://slash</WellKnownName>
                     <Stroke>
                       <CssParameter name="stroke">#807DFF</CssParameter>
-                      <CssParameter name="stroke-width">1</CssParameter>
+                      <CssParameter name="stroke-width">2</CssParameter>
                     </Stroke>
                   </Mark>
-                  <Size>8</Size>
+                  <Size>16</Size>
                 </Graphic>
               </GraphicFill>
             </Fill>
             <Stroke>
               <CssParameter name="stroke">#807DFF</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-width">2</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>pt2-Zone primaire de dégagement</sld:Name>
-          <sld:Title>Communications électronique - PT2 - Zone primaire de dégagement</sld:Title>
+          <sld:Title>Communications électroniques - Zone primaire de dégagement - PT2</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -95,123 +94,90 @@
             </ogc:And>
           </ogc:Filter>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <PolygonSymbolizer>
-            <Fill>
-              <GraphicFill>
-                <Graphic>
-                  <Mark>
-                    <WellKnownName>shape://backslash</WellKnownName>
-                    <Stroke>
-                      <CssParameter name="stroke">#807DFF</CssParameter>
-                      <CssParameter name="stroke-width">0.5</CssParameter>
-                    </Stroke>
-                  </Mark>
-                  <Size>8</Size>
-                </Graphic>
-              </GraphicFill>
-            </Fill>
-            <Stroke>
-              <CssParameter name="stroke">#807DFF</CssParameter>
-              <CssParameter name="stroke-width">0.5</CssParameter>
-            </Stroke>
-          </PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:GraphicFill>
+                <sld:Graphic>
+                  <sld:Mark>
+                    <sld:WellKnownName>shape://backslash</sld:WellKnownName>
+                    <sld:Stroke>
+                      <sld:CssParameter name="stroke">#807DFF</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+                    </sld:Stroke>
+                  </sld:Mark>
+                  <sld:Size>8</sld:Size>
+                </sld:Graphic>
+              </sld:GraphicFill>
+            </sld:Fill>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#807DFF</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>pt2-Zone secondaire de dégagement</sld:Name>
-          <sld:Title>Communications électronique - PT2 - Zone secondaire de dégagement</sld:Title>
+          <sld:Title>Communications électroniques - Zone secondaire, spéciale et secteur de dégagement PT2</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>suptype</ogc:PropertyName>
                 <ogc:Literal>pt2</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>typeass</ogc:PropertyName>
-                <ogc:Literal>Zone secondaire de dégagement</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>typeass</ogc:PropertyName>
+                  <ogc:Literal>Zone secondaire de dégagement</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>typeass</ogc:PropertyName>
+                  <ogc:Literal>Zone spéciale de dégagement</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>typeass</ogc:PropertyName>
+                  <ogc:Literal>Secteur de dégagement</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
             </ogc:And>
           </ogc:Filter>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <PolygonSymbolizer>
-            <Stroke>
-              <CssParameter name="stroke">#807DFF</CssParameter>
-              <CssParameter name="stroke-width">0.5</CssParameter>
-            </Stroke>
-          </PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:GraphicFill>
+                <sld:Graphic>
+                  <sld:Mark>
+                    <sld:WellKnownName>shape://backslash</sld:WellKnownName>
+                    <sld:Stroke>
+                      <sld:CssParameter name="stroke">#807DFF</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+                    </sld:Stroke>
+                  </sld:Mark>
+                  <sld:Size>16</sld:Size>
+                </sld:Graphic>
+              </sld:GraphicFill>
+            </sld:Fill>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#807DFF</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
-          <sld:Name>pt2-Zone spéciale de dégagement</sld:Name>
-          <sld:Title>Communications électronique - PT2 - Zone spéciale de dégagement</sld:Title>
+          <sld:Name>pt3</sld:Name>
+          <sld:Title>Réseaux de télécommunication - PT3</sld:Title>
           <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>suptype</ogc:PropertyName>
-                <ogc:Literal>pt2</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>typeass</ogc:PropertyName>
-                <ogc:Literal>Zone spéciale de dégagement</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>suptype</ogc:PropertyName>
+              <ogc:Literal>pt3</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <PolygonSymbolizer>
-            <Fill>
-              <GraphicFill>
-                <Graphic>
-                  <Mark>
-                    <WellKnownName>shape://slash</WellKnownName>
-                    <Stroke>
-                      <CssParameter name="stroke">#807DFF</CssParameter>
-                      <CssParameter name="stroke-width">0.5</CssParameter>
-                    </Stroke>
-                  </Mark>
-                  <Size>8</Size>
-                </Graphic>
-              </GraphicFill>
-            </Fill>
-            <Stroke>
-              <CssParameter name="stroke">#807DFF</CssParameter>
-              <CssParameter name="stroke-width">0.5</CssParameter>
-            </Stroke>
-          </PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>pt2-Secteur de dégagement</sld:Name>
-          <sld:Title>Communications électronique - PT2 - Secteur de dégagement</sld:Title>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>suptype</ogc:PropertyName>
-                <ogc:Literal>pt2</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>typeass</ogc:PropertyName>
-                <ogc:Literal>Secteur de dégagement</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <PolygonSymbolizer>
-            <Fill>
-              <GraphicFill>
-                <Graphic>
-                  <Mark>
-                    <WellKnownName>shape://slash</WellKnownName>
-                    <Stroke>
-                      <CssParameter name="stroke">#807DFF</CssParameter>
-                      <CssParameter name="stroke-width">0.5</CssParameter>
-                    </Stroke>
-                  </Mark>
-                  <Size>8</Size>
-                </Graphic>
-              </GraphicFill>
-            </Fill>
-            <Stroke>
-              <CssParameter name="stroke">#807DFF</CssParameter>
-              <CssParameter name="stroke-width">0.5</CssParameter>
-            </Stroke>
-          </PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#807dff</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
         </sld:Rule>
       </sld:FeatureTypeStyle>
     </sld:UserStyle>

@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>pm1bis</sld:Name>
-          <sld:Title>Sécurité publique - PM1bis</sld:Title>
+          <sld:Title>Inondations pour la rétention des crues du Rhin - PM1bis</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -16,16 +15,29 @@
           </ogc:Filter>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:GraphicFill>
+                <sld:Graphic>
+                  <sld:Mark>
+                    <sld:WellKnownName>shape://slash</sld:WellKnownName>
+                    <sld:Stroke>
+                      <sld:CssParameter name="stroke">#a81616</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+                    </sld:Stroke>
+                  </sld:Mark>
+                  <sld:Size>8</sld:Size>
+                </sld:Graphic>
+              </sld:GraphicFill>
+            </sld:Fill>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#ff8000</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">5 3</sld:CssParameter>
+              <sld:CssParameter name="stroke">#a81616</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>pm4</sld:Name>
-          <sld:Title>Sécurité publique - PM4</sld:Title>
+          <sld:Title>Zones de rétention d'eau et de mobilité des cours d'eau - PM4</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -40,20 +52,20 @@
                   <sld:Mark>
                     <sld:WellKnownName>ttf://Arial#0x3C</sld:WellKnownName>
                     <sld:Fill>
-                      <sld:CssParameter name="fill">#ff8000</sld:CssParameter>
+                      <sld:CssParameter name="fill">#a81616</sld:CssParameter>
                     </sld:Fill>
                   </sld:Mark>
-                  <sld:Size>12</sld:Size>
+                  <sld:Size>8</sld:Size>
                   <sld:Rotation>90</sld:Rotation>
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
-            <sld:VendorOption name="graphic-margin">4 0</sld:VendorOption>
+            <sld:VendorOption name="graphic-margin">4 0 4</sld:VendorOption>
           </sld:PolygonSymbolizer>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#ff8000</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+              <sld:CssParameter name="stroke">#a81616</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>

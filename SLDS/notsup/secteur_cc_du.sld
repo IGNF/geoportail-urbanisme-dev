@@ -16,7 +16,7 @@
               <ogc:Literal>01</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MinScaleDenominator>8530</sld:MinScaleDenominator>
+          <sld:MinScaleDenominator>17060</sld:MinScaleDenominator>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
@@ -53,7 +53,7 @@
               <ogc:Literal>01</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>8530</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#5d32ee</sld:CssParameter>
@@ -90,7 +90,7 @@
               <ogc:Literal>02</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MinScaleDenominator>8530</sld:MinScaleDenominator>
+          <sld:MinScaleDenominator>17060</sld:MinScaleDenominator>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
@@ -127,7 +127,7 @@
               <ogc:Literal>02</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>8530</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#5d32ee</sld:CssParameter>
@@ -164,7 +164,7 @@
               <ogc:Literal>03</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MinScaleDenominator>8530</sld:MinScaleDenominator>
+          <sld:MinScaleDenominator>17060</sld:MinScaleDenominator>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
@@ -201,7 +201,7 @@
               <ogc:Literal>03</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>8530</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#5d32ee</sld:CssParameter>
@@ -230,7 +230,7 @@
           </sld:TextSymbolizer>
         </sld:Rule>
         <sld:Rule>
-          <sld:Name>null</sld:Name>
+          <sld:Name>other</sld:Name>
           <sld:Title>Zone couverte par le RNU</sld:Title>
           <ogc:Filter>
             <ogc:And>

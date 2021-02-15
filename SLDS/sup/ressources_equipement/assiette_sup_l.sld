@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>a2</sld:Name>
-          <sld:Title>Eaux et assainissement - A2</sld:Title>
+          <sld:Title>Conduites d'irrigation - A2</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -46,7 +45,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>a5</sld:Name>
-          <sld:Title>Eaux et assainissement - A5</sld:Title>
+          <sld:Title>Canalisations publiques d'eau et assainissement - A5</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -81,7 +80,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>i3</sld:Name>
-          <sld:Title>Gaz - I3</sld:Title>
+          <sld:Title>Canalisations de transport de gaz, hydrocarbures et produits chimiques - I3</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -146,7 +145,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>i4-Aérien</sld:Name>
-          <sld:Title>Electricité - I4 - Ligne aérienne</sld:Title>
+          <sld:Title>Canalisations électriques aériennes - I4</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -185,7 +184,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>i4-Souterrain</sld:Name>
-          <sld:Title>Electricité - I4 - Ligne souterraine</sld:Title>
+          <sld:Title>Canalisations électriques souterraines - I4</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -225,7 +224,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>t2</sld:Name>
-          <sld:Title>Remontées mécaniques et pistes de ski - T2</sld:Title>
+          <sld:Title>Survol au profit des téléphériques - T2</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -258,7 +257,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>el7</sld:Name>
-          <sld:Title>Réseau routier - EL7</sld:Title>
+          <sld:Title>Alignement des voies publiques - EL7</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -269,14 +268,14 @@
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
-              <CssParameter name="stroke-width">0.5</CssParameter>
-              <CssParameter name="stroke-dasharray">10 2</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-dasharray">10 8</CssParameter>
             </Stroke>
           </LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>pt3</sld:Name>
-          <sld:Title>Communications électronique - PT3</sld:Title>
+          <sld:Title>Réseaux de télécommunication - PT3</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>

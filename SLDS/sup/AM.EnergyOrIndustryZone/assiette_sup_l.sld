@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>i3</sld:Name>
-          <sld:Title>Gaz - I3</sld:Title>
+          <sld:Title>Canalisations de transport de gaz, hydrocarbures et produits chimiques - I3</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -72,7 +71,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>i4-Aérien</sld:Name>
-          <sld:Title>Electricité - I4 - Ligne aérienne</sld:Title>
+          <sld:Title>Canalisations électriques aériennes - I4</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -111,7 +110,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>i4-Souterrain</sld:Name>
-          <sld:Title>Electricité - I4 - Ligne souterraine</sld:Title>
+          <sld:Title>Canalisations électriques souterraines - I4</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>

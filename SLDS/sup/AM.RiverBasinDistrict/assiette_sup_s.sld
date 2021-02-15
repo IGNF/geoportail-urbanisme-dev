@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>a4</sld:Name>
-          <sld:Title>Eau - A4</sld:Title>
+          <sld:Title>Lits et berges des cours d'eau - A4</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -18,14 +17,14 @@
           <sld:PolygonSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#00FF00</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
               <sld:CssParameter name="stroke-dasharray">10 5</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>el2bis</sld:Name>
-          <sld:Title>Sécurité publique - EL2bis</sld:Title>
+          <sld:Title>Loire et ses affluents - EL2bis</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -43,11 +42,11 @@
                       <sld:CssParameter name="fill">#000000</sld:CssParameter>
                     </sld:Fill>
                   </sld:Mark>
-                  <sld:Size>1</sld:Size>
+                  <sld:Size>2</sld:Size>
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
-            <sld:VendorOption name="graphic-margin">3</sld:VendorOption>
+            <sld:VendorOption name="graphic-margin">1</sld:VendorOption>
           </sld:PolygonSymbolizer>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
@@ -58,7 +57,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>el3-Halage</sld:Name>
-          <sld:Title>Cours d’eau - EL3 - Halage</sld:Title>
+          <sld:Title>Cours d’eau - Halage - EL3</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -74,14 +73,15 @@
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#9b9b9b</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">4 8 2</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>el3-Marchepied</sld:Name>
-          <sld:Title>Cours d’eau - EL3 - Marchepied</sld:Title>
+          <sld:Title>Cours d’eau - Marchepied - EL3</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -97,8 +97,8 @@
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
-              <sld:CssParameter name="stroke">#9b9b9b</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
               <sld:CssParameter name="stroke-dasharray">7 5</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>

@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>js1</sld:Name>
-          <sld:Title>Patrimoine sportif - JS1</sld:Title>
+          <sld:Title>Equipements sportifs - JS1</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -26,13 +25,13 @@
                     </sld:Fill>
                     <sld:Stroke>
                       <sld:CssParameter name="stroke">#000000</sld:CssParameter>
-                      <sld:CssParameter name="stroke-width">0.1</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
                     </sld:Stroke>
                   </sld:Mark>
-                  <sld:Size>8</sld:Size>
+                  <sld:Size>10</sld:Size>
                 </sld:Graphic>
               </sld:GraphicStroke>
-              <sld:CssParameter name="stroke-dasharray">5 5</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">7 4</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>

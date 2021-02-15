@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>a2</sld:Name>
-          <sld:Title>Eaux et assainissement - A2</sld:Title>
+          <sld:Title>Conduites d'irrigation - A2</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -46,7 +45,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>a5</sld:Name>
-          <sld:Title>Eaux et assainissement - A5</sld:Title>
+          <sld:Title>Canalisations publiques d'eau et assainissement - A5</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -81,7 +80,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>i3</sld:Name>
-          <sld:Title>Gaz - I3</sld:Title>
+          <sld:Title>Canalisations de transport de gaz, hydrocarbures et produits chimiques - I3</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>

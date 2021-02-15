@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>a7</sld:Name>
-          <sld:Title>Forêts - A7</sld:Title>
+          <sld:Title>Forêts dites de protection - A7</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -20,16 +19,16 @@
               <sld:GraphicFill>
                 <sld:Graphic>
                   <sld:Mark>
-                    <sld:WellKnownName>ttf://Wingdings#0xAC</sld:WellKnownName>
+                    <sld:WellKnownName>ttf://Wingdings#0xF1</sld:WellKnownName>
                     <sld:Fill>
                       <sld:CssParameter name="fill">#00ff00</sld:CssParameter>
                     </sld:Fill>
                   </sld:Mark>
-                  <sld:Size>8</sld:Size>
+                  <sld:Size>15</sld:Size>
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
-            <sld:VendorOption name="graphic-margin">4</sld:VendorOption>
+            <sld:VendorOption name="graphic-margin">15</sld:VendorOption>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#00ff00</sld:CssParameter>
               <sld:CssParameter name="stroke-width">1</sld:CssParameter>

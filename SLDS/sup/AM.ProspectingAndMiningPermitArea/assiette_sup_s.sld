@@ -3,7 +3,6 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>i6</sld:Name>
@@ -16,23 +15,10 @@
           </ogc:Filter>
           <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
           <PolygonSymbolizer>
-            <Fill>
-              <GraphicFill>
-                <Graphic>
-                  <Mark>
-                    <WellKnownName>shape://backslash</WellKnownName>
-                    <Stroke>
-                      <CssParameter name="stroke">#FA00FA</CssParameter>
-                      <CssParameter name="stroke-width">1</CssParameter>
-                    </Stroke>
-                  </Mark>
-                  <Size>8</Size>
-                </Graphic>
-              </GraphicFill>
-            </Fill>
             <Stroke>
               <CssParameter name="stroke">#FA00FA</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-width">1.5</CssParameter>
+              <CssParameter name="stroke-dasharray">5 3</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
         </sld:Rule>

@@ -3,11 +3,10 @@
   <sld:NamedLayer>
     <sld:Name>One style</sld:Name>
     <sld:UserStyle>
-      <sld:Name>One style</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
           <sld:Name>ar2</sld:Name>
-          <sld:Title>Défense nationale - AR2</sld:Title>
+          <sld:Title>Ouvrages de défense ou de sécurité maritime - AR2</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -23,7 +22,7 @@
                     <sld:WellKnownName>shape://slash</sld:WellKnownName>
                     <sld:Stroke>
                       <sld:CssParameter name="stroke">#800080</sld:CssParameter>
-                      <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
                     </sld:Stroke>
                   </sld:Mark>
                   <sld:Size>10</sld:Size>
@@ -32,13 +31,13 @@
             </sld:Fill>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#800080</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>ar4</sld:Name>
-          <sld:Title>Défense nationale - AR4</sld:Title>
+          <sld:Title>Terrains d'atterrissage militaires - AR4</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -49,13 +48,13 @@
           <sld:PolygonSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#800080</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>ar5</sld:Name>
-          <sld:Title>Défense nationale - AR5</sld:Title>
+          <sld:Title>Fortifications et ouvrages militaires - AR5</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -71,7 +70,7 @@
                     <sld:WellKnownName>shape://slash</sld:WellKnownName>
                     <sld:Stroke>
                       <sld:CssParameter name="stroke">#800080</sld:CssParameter>
-                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">2</sld:CssParameter>
                     </sld:Stroke>
                   </sld:Mark>
                   <sld:Size>8</sld:Size>
@@ -80,13 +79,13 @@
             </sld:Fill>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#800080</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>ar6</sld:Name>
-          <sld:Title>Défense nationale - AR6</sld:Title>
+          <sld:Title>Champs de tir - AR6</sld:Title>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>suptype</ogc:PropertyName>
@@ -102,7 +101,7 @@
                     <sld:WellKnownName>shape://backslash</sld:WellKnownName>
                     <sld:Stroke>
                       <sld:CssParameter name="stroke">#800080</sld:CssParameter>
-                      <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+                      <sld:CssParameter name="stroke-width">1</sld:CssParameter>
                     </sld:Stroke>
                   </sld:Mark>
                   <sld:Size>8</sld:Size>
@@ -111,7 +110,7 @@
             </sld:Fill>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#800080</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>
