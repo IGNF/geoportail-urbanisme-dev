@@ -110,11 +110,10 @@ Le GpU offre des flux WMS utilisés pour le rendu cartographique.
 
 ### GetCapabilities
 
-[https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?service=WMS&request=GetCapabilities](https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?service=WMS&request=GetCapabilities)
+[https://data.geopf.fr/wms-v/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities](https://data.geopf.fr/wms-v/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities))
 
 Remarque :
 
-* La couche lowscale sera supprimée dans une prochaine version (2.1) en cours de finalisation
 * La couche "municipality" représente actuellement les communes, leurs appartenance ou non au RNU et la couverture des document d'urbanisme. Elle va être scindé en une table "municipality" et une table "document" représentant le tableau d'assemblage des documents d'urbanisme.
 
 
@@ -122,13 +121,12 @@ Remarque :
 
 https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?LAYERS=zone_secteur&FORMAT=image%2Fpng&TRANSPARENT=true&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS=EPSG%3A3857&BBOX=205462.73203055933,6020516.112627208,215246.67165106162,6030300.0522477105&WIDTH=256&HEIGHT=256
 
-![GetMap](https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?LAYERS=zone_secteur&FORMAT=image%2Fpng&TRANSPARENT=true&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS=EPSG%3A3857&BBOX=205462.73203055933,6020516.112627208,215246.67165106162,6030300.0522477105&WIDTH=256&HEIGHT=256)
+![GetMap](https://data.geopf.fr/wms-v/ows?LAYERS=zone_secteur&FORMAT=image%2Fpng&TRANSPARENT=true&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS=EPSG%3A3857&BBOX=205462.73203055933,6020516.112627208,215246.67165106162,6030300.0522477105&WIDTH=256&HEIGHT=256)
 
 
 ### GetFeatureInfo (format : GeoJSON FeatureCollection)
 
-https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?REQUEST=GetFeatureInfo&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&INFO_FORMAT=application%2Fjson&SRS=EPSG%3A3857&FEATURE_COUNT=200&WIDTH=760&HEIGHT=604&X=450&Y=282&LAYERS=zone_secteur%2Cprescription%2Cinfo&QUERY_LAYERS=zone_secteur%2Cprescription%2Cinfo&BBOX=-214908.101573%2C6145916.111853%2C-200385.066199%2C6157458.103124
-
+https://data.geopf.fr/wms-v/ows?REQUEST=GetFeatureInfo&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&INFO_FORMAT=application%2Fjson&SRS=EPSG%3A3857&FEATURE_COUNT=200&WIDTH=760&HEIGHT=604&X=450&Y=282&LAYERS=zone_secteur%2Cprescription%2Cinfo&QUERY_LAYERS=zone_secteur%2Cprescription%2Cinfo&BBOX=-214908.101573%2C6145916.111853%2C-200385.066199%2C6157458.103124
 
 
 ## Flux WFS
@@ -137,7 +135,7 @@ Le GpU offre des flux WFS utilisés pour l'interogation des couches
 
 ### GetCapabilities
 
-[https://wxs-gpu.mongeoportail.ign.fr/externe/39wtxmgtn23okfbbs1al2lz3/wfs/v?service=WFS&request=GetCapabilities](https://wxs-gpu.mongeoportail.ign.fr/externe/39wtxmgtn23okfbbs1al2lz3/wfs/v?service=WFS&request=GetCapabilities)
+[https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities](https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities)
 
 
 
