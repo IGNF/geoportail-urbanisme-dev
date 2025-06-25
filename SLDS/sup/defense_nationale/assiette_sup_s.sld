@@ -13,7 +13,7 @@
               <ogc:Literal>ar1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>25000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -44,7 +44,7 @@
               <ogc:Literal>ar2</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>25000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -87,7 +87,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>50000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -124,7 +124,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>50000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -155,7 +155,7 @@
               <ogc:Literal>ar4</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#800080</sld:CssParameter>
@@ -172,7 +172,7 @@
               <ogc:Literal>ar5</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>25000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -203,7 +203,7 @@
               <ogc:Literal>ar6</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>

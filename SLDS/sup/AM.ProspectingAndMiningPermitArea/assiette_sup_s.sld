@@ -13,7 +13,7 @@
               <ogc:Literal>i6</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <PolygonSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#FA00FA</CssParameter>

@@ -2,6 +2,7 @@
 <sld:StyledLayerDescriptor
     xmlns:sld="http://www.opengis.net/sld"
     xmlns="http://www.opengis.net/sld"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:gml="http://www.opengis.net/gml"
     xmlns:ogc="http://www.opengis.net/ogc" version="1.0.0">
     <sld:NamedLayer>
@@ -19,7 +20,7 @@
                             <ogc:Literal>16</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+                    <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -41,7 +42,7 @@
                             <ogc:Literal>19</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+                    <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -63,7 +64,7 @@
                             <ogc:Literal>27</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+                    <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -72,6 +73,26 @@
                                     <sld:CssParameter name="fill">#000000</sld:CssParameter>
                                 </sld:Fill>
                             </sld:Mark>
+                            <sld:Size>12</sld:Size>
+                        </sld:Graphic>
+                    </sld:PointSymbolizer>
+                </sld:Rule>
+                <sld:Rule>
+                    <sld:Name>70</sld:Name>
+                    <sld:Title>Emprise ou localisation des immeubles bâtis ou non bâtis classés ou inscrits</sld:Title>
+                    <ogc:Filter>
+                        <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>typeinf</ogc:PropertyName>
+                            <ogc:Literal>70</ogc:Literal>
+                        </ogc:PropertyIsEqualTo>
+                    </ogc:Filter>
+                    <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
+                    <sld:PointSymbolizer>
+                        <sld:Graphic>
+                            <ExternalGraphic>
+                                <OnlineResource xlink:type="simple" xlink:href="https://data.geopf.fr/annexes/gpu/geoserver/images/info-70.png" />
+                                <Format>image/png</Format>
+                            </ExternalGraphic>
                             <sld:Size>12</sld:Size>
                         </sld:Graphic>
                     </sld:PointSymbolizer>
@@ -93,9 +114,13 @@
                                 <ogc:PropertyName>typeinf</ogc:PropertyName>
                                 <ogc:Literal>27</ogc:Literal>
                             </ogc:PropertyIsNotEqualTo>
+                            <ogc:PropertyIsNotEqualTo>
+                                <ogc:PropertyName>typeinf</ogc:PropertyName>
+                                <ogc:Literal>70</ogc:Literal>
+                            </ogc:PropertyIsNotEqualTo>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+                    <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>

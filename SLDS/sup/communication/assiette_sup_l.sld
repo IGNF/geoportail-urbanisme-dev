@@ -13,7 +13,7 @@
               <ogc:Literal>a2</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#00ff00</sld:CssParameter>
@@ -52,7 +52,7 @@
               <ogc:Literal>a5</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#00ff00</sld:CssParameter>
@@ -79,6 +79,24 @@
           </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
+          <sld:Name>el7</sld:Name>
+          <sld:Title>Alignement des voies publiques - EL7</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>suptype</ogc:PropertyName>
+              <ogc:Literal>el7</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-dasharray">10 8</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
           <sld:Name>t2</sld:Name>
           <sld:Title>Survol au profit des téléphériques - T2</sld:Title>
           <ogc:Filter>
@@ -87,7 +105,7 @@
               <ogc:Literal>t2</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#000000</sld:CssParameter>
@@ -110,24 +128,6 @@
               <sld:CssParameter name="stroke-dasharray">8 12</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>el7</sld:Name>
-          <sld:Title>Alignement des voies publiques - EL7</sld:Title>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>suptype</ogc:PropertyName>
-              <ogc:Literal>el7</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <LineSymbolizer>
-            <Stroke>
-              <CssParameter name="stroke">#000000</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-              <CssParameter name="stroke-dasharray">10 8</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
         </sld:Rule>
       </sld:FeatureTypeStyle>
     </sld:UserStyle>

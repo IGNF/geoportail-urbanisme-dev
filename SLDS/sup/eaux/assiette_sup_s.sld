@@ -5,6 +5,24 @@
     <sld:UserStyle>
       <sld:FeatureTypeStyle>
         <sld:Rule>
+          <sld:Name>a4</sld:Name>
+          <sld:Title>Lits et berges des cours d'eau - A4</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>suptype</ogc:PropertyName>
+              <ogc:Literal>a4</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
+          <sld:PolygonSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#00FF00</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">10 5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
           <sld:Name>as1-Périmètre de protection immédiate</sld:Name>
           <sld:Title>Protection des eaux - périmètre de protection immédiate - AS1</sld:Title>
           <ogc:Filter>
@@ -19,7 +37,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -56,7 +74,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -93,7 +111,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -130,7 +148,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -149,24 +167,6 @@
             <sld:Stroke>
               <sld:CssParameter name="stroke">#00c0c0</sld:CssParameter>
               <sld:CssParameter name="stroke-width">3</sld:CssParameter>
-            </sld:Stroke>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>a4</sld:Name>
-          <sld:Title>Lits et berges des cours d'eau - A4</sld:Title>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>suptype</ogc:PropertyName>
-              <ogc:Literal>a4</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <sld:PolygonSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#00FF00</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">10 5</sld:CssParameter>
             </sld:Stroke>
           </sld:PolygonSymbolizer>
         </sld:Rule>

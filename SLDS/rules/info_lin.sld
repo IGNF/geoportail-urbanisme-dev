@@ -11,6 +11,24 @@
             <sld:FeatureTypeStyle>
                 <sld:Name>Information linéaire</sld:Name>
                 <sld:Rule>
+                    <sld:Name>01</sld:Name>
+                    <sld:Title>Périmètre d’application du plan de sauvegarde et mise en valeur</sld:Title>
+                    <ogc:Filter>
+                        <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>typeinf</ogc:PropertyName>
+                            <ogc:Literal>01</ogc:Literal>
+                        </ogc:PropertyIsEqualTo>
+                    </ogc:Filter>
+                    <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
+                    <sld:LineSymbolizer>
+                        <sld:Stroke>
+                            <sld:CssParameter name="stroke">#cd64ff</sld:CssParameter>
+                            <sld:CssParameter name="stroke-width">3</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">6 2 2 2</sld:CssParameter>
+                        </sld:Stroke>
+                    </sld:LineSymbolizer>
+                </sld:Rule>
+                <sld:Rule>
                     <sld:Name>08</sld:Name>
                     <sld:Title>Périmètre forestier : interdiction ou réglementation des plantations</sld:Title>
                     <ogc:Filter>
@@ -19,7 +37,7 @@
                             <ogc:Literal>08</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+                    <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
                             <sld:CssParameter name="stroke">#268c00</sld:CssParameter>
@@ -68,7 +86,7 @@
                             <ogc:Literal>14</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+                    <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
                             <sld:GraphicStroke>
@@ -95,7 +113,7 @@
                             <ogc:Literal>19</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+                    <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
                             <sld:GraphicStroke>
@@ -122,7 +140,7 @@
                             <ogc:Literal>27</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+                    <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
                             <sld:GraphicStroke>
@@ -147,6 +165,10 @@
                         <ogc:And>
                             <ogc:PropertyIsNotEqualTo>
                                 <ogc:PropertyName>typeinf</ogc:PropertyName>
+                                <ogc:Literal>01</ogc:Literal>
+                            </ogc:PropertyIsNotEqualTo>
+                            <ogc:PropertyIsNotEqualTo>
+                                <ogc:PropertyName>typeinf</ogc:PropertyName>
                                 <ogc:Literal>08</ogc:Literal>
                             </ogc:PropertyIsNotEqualTo>
                             <ogc:PropertyIsNotEqualTo>
@@ -163,7 +185,7 @@
                             </ogc:PropertyIsNotEqualTo>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+                    <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
                             <sld:CssParameter name="stroke">#9c9c9c</sld:CssParameter>

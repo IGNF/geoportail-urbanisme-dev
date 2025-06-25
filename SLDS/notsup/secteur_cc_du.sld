@@ -16,8 +16,8 @@
               <ogc:Literal>01</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MinScaleDenominator>17060</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MinScaleDenominator>15000</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:CssParameter name="fill">#b11c00</sld:CssParameter>
@@ -28,8 +28,8 @@
           </sld:PolygonSymbolizer>
           <sld:TextSymbolizer>
             <sld:Label>
-		          <ogc:Literal>ZC</ogc:Literal>
-		        </sld:Label>
+              <ogc:Literal>ZC</ogc:Literal>
+            </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Arial</sld:CssParameter>
               <sld:CssParameter name="font-size">14</sld:CssParameter>
@@ -53,7 +53,7 @@
               <ogc:Literal>01</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#5d32ee</sld:CssParameter>
@@ -62,23 +62,23 @@
           </sld:PolygonSymbolizer>
           <sld:TextSymbolizer>
             <sld:Label>
-		          <ogc:Literal>ZC</ogc:Literal>
-		        </sld:Label>
+              <ogc:Literal>ZC</ogc:Literal>
+            </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Arial</sld:CssParameter>
               <sld:CssParameter name="font-size">14</sld:CssParameter>
               <sld:CssParameter name="font-style">normal</sld:CssParameter>
               <sld:CssParameter name="font-weight">bold</sld:CssParameter>
             </sld:Font>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#b11c00</sld:CssParameter>
-            </sld:Fill>
             <sld:Halo>
               <sld:Radius>2</sld:Radius>
               <sld:Fill>
                 <sld:CssParameter name="fill">#ffffff</sld:CssParameter>
               </sld:Fill>
             </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#b11c00</sld:CssParameter>
+            </sld:Fill>
           </sld:TextSymbolizer>
         </sld:Rule>
         <sld:Rule>
@@ -90,8 +90,8 @@
               <ogc:Literal>02</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MinScaleDenominator>17060</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MinScaleDenominator>15000</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:CssParameter name="fill">#aa00cc</sld:CssParameter>
@@ -102,8 +102,8 @@
           </sld:PolygonSymbolizer>
           <sld:TextSymbolizer>
             <sld:Label>
-		          <ogc:Literal>ZCa</ogc:Literal>
-		        </sld:Label>
+              <ogc:Literal>ZCa</ogc:Literal>
+            </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Arial</sld:CssParameter>
               <sld:CssParameter name="font-size">14</sld:CssParameter>
@@ -127,7 +127,7 @@
               <ogc:Literal>02</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#5d32ee</sld:CssParameter>
@@ -136,23 +136,23 @@
           </sld:PolygonSymbolizer>
           <sld:TextSymbolizer>
             <sld:Label>
-		          <ogc:Literal>ZCa</ogc:Literal>
-		        </sld:Label>
+              <ogc:Literal>ZCa</ogc:Literal>
+            </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Arial</sld:CssParameter>
               <sld:CssParameter name="font-size">14</sld:CssParameter>
               <sld:CssParameter name="font-style">normal</sld:CssParameter>
               <sld:CssParameter name="font-weight">bold</sld:CssParameter>
             </sld:Font>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#aa00cc</sld:CssParameter>
-            </sld:Fill>
             <sld:Halo>
               <sld:Radius>2</sld:Radius>
               <sld:Fill>
                 <sld:CssParameter name="fill">#ffffff</sld:CssParameter>
               </sld:Fill>
             </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#aa00cc</sld:CssParameter>
+            </sld:Fill>
           </sld:TextSymbolizer>
         </sld:Rule>
         <sld:Rule>
@@ -164,8 +164,8 @@
               <ogc:Literal>03</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MinScaleDenominator>17060</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MinScaleDenominator>15000</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:CssParameter name="fill">#aaff00</sld:CssParameter>
@@ -176,8 +176,8 @@
           </sld:PolygonSymbolizer>
           <sld:TextSymbolizer>
             <sld:Label>
-		          <ogc:Literal>ZnC</ogc:Literal>
-		        </sld:Label>
+              <ogc:Literal>ZnC</ogc:Literal>
+            </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Arial</sld:CssParameter>
               <sld:CssParameter name="font-size">14</sld:CssParameter>
@@ -201,7 +201,7 @@
               <ogc:Literal>03</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>17060</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>15000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#5d32ee</sld:CssParameter>
@@ -210,23 +210,23 @@
           </sld:PolygonSymbolizer>
           <sld:TextSymbolizer>
             <sld:Label>
-		          <ogc:Literal>ZnC</ogc:Literal>
-		        </sld:Label>
+              <ogc:Literal>ZnC</ogc:Literal>
+            </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Arial</sld:CssParameter>
               <sld:CssParameter name="font-size">14</sld:CssParameter>
               <sld:CssParameter name="font-style">normal</sld:CssParameter>
               <sld:CssParameter name="font-weight">bold</sld:CssParameter>
             </sld:Font>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
             <sld:Halo>
               <sld:Radius>2</sld:Radius>
               <sld:Fill>
                 <sld:CssParameter name="fill">#aaff00</sld:CssParameter>
               </sld:Fill>
             </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
           </sld:TextSymbolizer>
         </sld:Rule>
         <sld:Rule>
@@ -248,7 +248,7 @@
               </ogc:PropertyIsNotEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill/>
             <sld:Stroke>
@@ -258,8 +258,8 @@
           </sld:PolygonSymbolizer>
           <sld:TextSymbolizer>
             <sld:Label>
-		          <ogc:Literal>RNU</ogc:Literal>
-		        </sld:Label>
+              <ogc:Literal>RNU</ogc:Literal>
+            </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Arial</sld:CssParameter>
               <sld:CssParameter name="font-size">14</sld:CssParameter>

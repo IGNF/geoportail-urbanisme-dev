@@ -5,25 +5,6 @@
     <sld:UserStyle>
       <sld:FeatureTypeStyle>
         <sld:Rule>
-          <sld:Name>i1</sld:Name>
-          <sld:Title>Maitrise des canalisations de gaz, d’hydrocarbures et de produits chimiques - I1 </sld:Title>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>suptype</ogc:PropertyName>
-              <ogc:Literal>i1</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>17062</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <sld:PolygonSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#FA00FA</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">4 2</sld:CssParameter>
-            </sld:Stroke>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
           <sld:Name>i3-Zone de protection</sld:Name>
           <sld:Title>Canalisations de transport de gaz, hydrocarbures et produits chimiques - I3</sld:Title>
           <ogc:Filter>
@@ -38,7 +19,8 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MinScaleDenominator>25000</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#fa00fa</sld:CssParameter>
@@ -62,12 +44,9 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MinScaleDenominator>25000</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#fa00fa</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
-            </sld:Stroke>
             <sld:Fill>
               <sld:GraphicFill>
                 <sld:Graphic>
@@ -82,42 +61,12 @@
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#fa00fa</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+            </sld:Stroke>
             <sld:VendorOption name="graphic-margin">2 0 2</sld:VendorOption>
           </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>i5</sld:Name>
-          <sld:Title>Canalisations de distribution de gaz - I5</sld:Title>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>suptype</ogc:PropertyName>
-              <ogc:Literal>i5</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:GraphicFill>
-                <sld:Graphic>
-                  <sld:Mark>
-                    <sld:WellKnownName>ttf://Arial#0x3C</sld:WellKnownName>
-                    <sld:Fill>
-                      <sld:CssParameter name="fill">#FA00FA</sld:CssParameter>
-                    </sld:Fill>
-                  </sld:Mark>
-                  <sld:Size>8</sld:Size>
-                  <sld:Rotation>90</sld:Rotation>
-                </sld:Graphic>
-              </sld:GraphicFill>
-            </sld:Fill>
-            <sld:VendorOption name="graphic-margin">3 0 3</sld:VendorOption>
-          </sld:PolygonSymbolizer>
-          <PolygonSymbolizer>
-            <Stroke>
-              <CssParameter name="stroke">#FA00FA</CssParameter>
-              <CssParameter name="stroke-width">1.5</CssParameter>
-            </Stroke>
-          </PolygonSymbolizer>
         </sld:Rule>
       </sld:FeatureTypeStyle>
     </sld:UserStyle>

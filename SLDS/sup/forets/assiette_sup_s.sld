@@ -13,7 +13,7 @@
               <ogc:Literal>a1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>1091958</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>1100000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -28,11 +28,11 @@
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
-            <sld:VendorOption name="graphic-margin">15</sld:VendorOption>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#00ff00</sld:CssParameter>
               <sld:CssParameter name="stroke-width">1</sld:CssParameter>
             </sld:Stroke>
+            <sld:VendorOption name="graphic-margin">15</sld:VendorOption>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
@@ -44,7 +44,7 @@
               <ogc:Literal>a7</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>1091958</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>1100000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -59,11 +59,11 @@
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
-            <sld:VendorOption name="graphic-margin">15</sld:VendorOption>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#00ff00</sld:CssParameter>
               <sld:CssParameter name="stroke-width">1</sld:CssParameter>
             </sld:Stroke>
+            <sld:VendorOption name="graphic-margin">15</sld:VendorOption>
           </sld:PolygonSymbolizer>
         </sld:Rule>
         <sld:Rule>
@@ -75,7 +75,7 @@
               <ogc:Literal>a8</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>1091958</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>1100000</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:GraphicFill>
@@ -90,11 +90,11 @@
                 </sld:Graphic>
               </sld:GraphicFill>
             </sld:Fill>
-            <sld:VendorOption name="graphic-margin">15</sld:VendorOption>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#00ff00</sld:CssParameter>
               <sld:CssParameter name="stroke-width">1</sld:CssParameter>
             </sld:Stroke>
+            <sld:VendorOption name="graphic-margin">15</sld:VendorOption>
           </sld:PolygonSymbolizer>
         </sld:Rule>
       </sld:FeatureTypeStyle>

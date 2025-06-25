@@ -13,7 +13,7 @@
               <ogc:Literal>a2</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#00ff00</sld:CssParameter>
@@ -52,7 +52,7 @@
               <ogc:Literal>a5</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#00ff00</sld:CssParameter>
@@ -79,6 +79,24 @@
           </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
+          <sld:Name>el7</sld:Name>
+          <sld:Title>Alignement des voies publiques - EL7</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>suptype</ogc:PropertyName>
+              <ogc:Literal>el7</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-dasharray">10 8</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
           <sld:Name>i3</sld:Name>
           <sld:Title>Canalisations de transport de gaz, hydrocarbures et produits chimiques - I3</sld:Title>
           <ogc:Filter>
@@ -87,7 +105,8 @@
               <ogc:Literal>i3</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MinScaleDenominator>25000</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#fa00fa</sld:CssParameter>
@@ -158,7 +177,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#ff007f</sld:CssParameter>
@@ -170,10 +189,10 @@
               <sld:GraphicStroke>
                 <sld:Graphic>
                   <sld:Mark>
-                    <sld:wellknownname>ttf://Wingdings 2#0xB0</sld:wellknownname>
-                    <sld:fill>
-                      <sld:cssparameter name="fill">#ff007f</sld:cssparameter>
-                    </sld:fill>
+                    <sld:WellKnownName>ttf://Wingdings 2#0xB0</sld:WellKnownName>
+                    <sld:Fill>
+                      <sld:CssParameter name="fill">#ff007f</sld:CssParameter>
+                    </sld:Fill>
                   </sld:Mark>
                   <sld:Size>8</sld:Size>
                 </sld:Graphic>
@@ -197,7 +216,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#ff007f</sld:CssParameter>
@@ -210,10 +229,10 @@
               <sld:GraphicStroke>
                 <sld:Graphic>
                   <sld:Mark>
-                    <sld:wellknownname>ttf://Wingdings 2#0xB0</sld:wellknownname>
-                    <sld:fill>
-                      <sld:cssparameter name="fill">#ff007f</sld:cssparameter>
-                    </sld:fill>
+                    <sld:WellKnownName>ttf://Wingdings 2#0xB0</sld:WellKnownName>
+                    <sld:Fill>
+                      <sld:CssParameter name="fill">#ff007f</sld:CssParameter>
+                    </sld:Fill>
                   </sld:Mark>
                   <sld:Size>8</sld:Size>
                 </sld:Graphic>
@@ -221,57 +240,6 @@
               <sld:CssParameter name="stroke-dasharray">5 10</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>t2</sld:Name>
-          <sld:Title>Survol au profit des téléphériques - T2</sld:Title>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>suptype</ogc:PropertyName>
-              <ogc:Literal>t2</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:GraphicStroke>
-                <sld:Graphic>
-                  <sld:Mark>
-                    <sld:WellKnownName>square</sld:WellKnownName>
-                    <sld:Fill>
-                      <sld:CssParameter name="fill">#000000</sld:CssParameter>
-                    </sld:Fill>
-                  </sld:Mark>
-                  <sld:Size>8</sld:Size>
-                </sld:Graphic>
-              </sld:GraphicStroke>
-              <sld:CssParameter name="stroke-dasharray">8 12</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>el7</sld:Name>
-          <sld:Title>Alignement des voies publiques - EL7</sld:Title>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>suptype</ogc:PropertyName>
-              <ogc:Literal>el7</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
-          <LineSymbolizer>
-            <Stroke>
-              <CssParameter name="stroke">#000000</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-              <CssParameter name="stroke-dasharray">10 8</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <sld:Name>pt3</sld:Name>
@@ -282,7 +250,7 @@
               <ogc:Literal>pt3</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#807DFF</sld:CssParameter>
@@ -309,6 +277,39 @@
                   <sld:Size>6</sld:Size>
                 </sld:Graphic>
               </sld:GraphicStroke>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Name>t2</sld:Name>
+          <sld:Title>Survol au profit des téléphériques - T2</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>suptype</ogc:PropertyName>
+              <ogc:Literal>t2</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:GraphicStroke>
+                <sld:Graphic>
+                  <sld:Mark>
+                    <sld:WellKnownName>square</sld:WellKnownName>
+                    <sld:Fill>
+                      <sld:CssParameter name="fill">#000000</sld:CssParameter>
+                    </sld:Fill>
+                  </sld:Mark>
+                  <sld:Size>8</sld:Size>
+                </sld:Graphic>
+              </sld:GraphicStroke>
+              <sld:CssParameter name="stroke-dasharray">8 12</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>

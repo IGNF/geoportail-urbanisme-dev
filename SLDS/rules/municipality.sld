@@ -18,7 +18,7 @@
                             <ogc:Literal>true</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <sld:MaxScaleDenominator>545979</sld:MaxScaleDenominator>
+                    <sld:MaxScaleDenominator>500000</sld:MaxScaleDenominator>
                     <sld:PolygonSymbolizer>
                         <sld:Fill>
                             <sld:CssParameter name="fill">#808080</sld:CssParameter>
@@ -38,7 +38,7 @@
                             <ogc:Literal>true</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>545979</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>500000</sld:MinScaleDenominator>
                     <sld:PolygonSymbolizer>
                         <sld:Fill>
                             <sld:CssParameter name="fill">#808080</sld:CssParameter>

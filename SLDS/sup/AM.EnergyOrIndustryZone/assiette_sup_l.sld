@@ -13,7 +13,7 @@
               <ogc:Literal>i3</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#fa00fa</sld:CssParameter>
@@ -84,7 +84,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#ff007f</sld:CssParameter>
@@ -96,10 +96,10 @@
               <sld:GraphicStroke>
                 <sld:Graphic>
                   <sld:Mark>
-                    <sld:wellknownname>ttf://Wingdings 2#0xB0</sld:wellknownname>
-                    <sld:fill>
-                      <sld:cssparameter name="fill">#ff007f</sld:cssparameter>
-                    </sld:fill>
+                    <sld:WellKnownName>ttf://Wingdings 2#0xB0</sld:WellKnownName>
+                    <sld:Fill>
+                      <sld:CssParameter name="fill">#ff007f</sld:CssParameter>
+                    </sld:Fill>
                   </sld:Mark>
                   <sld:Size>8</sld:Size>
                 </sld:Graphic>
@@ -123,7 +123,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>136495</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>150000</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#ff007f</sld:CssParameter>
@@ -136,10 +136,10 @@
               <sld:GraphicStroke>
                 <sld:Graphic>
                   <sld:Mark>
-                    <sld:wellknownname>ttf://Wingdings 2#0xB0</sld:wellknownname>
-                    <sld:fill>
-                      <sld:cssparameter name="fill">#ff007f</sld:cssparameter>
-                    </sld:fill>
+                    <sld:WellKnownName>ttf://Wingdings 2#0xB0</sld:WellKnownName>
+                    <sld:Fill>
+                      <sld:CssParameter name="fill">#ff007f</sld:CssParameter>
+                    </sld:Fill>
                   </sld:Mark>
                   <sld:Size>8</sld:Size>
                 </sld:Graphic>
